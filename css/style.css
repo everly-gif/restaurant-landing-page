@@ -88,6 +88,7 @@ body{
     border:1px solid white;
     background-color: black;
     cursor: pointer;
+    animation:btn 1.5s alternate infinite;
     
 }
 .arrows{
@@ -99,6 +100,11 @@ body{
     0%{color:white;}
     50%{color:#F0C929;}
     100%{color:white;}
+}
+@keyframes btn {
+    0%{border: 1px solid white;}
+    50%{border: 1px solid #F0C929;}
+    100%{border: 1px solid white;}
 }
 .outer-1{
     background-color: black;
@@ -159,7 +165,7 @@ body{
 .content-2 p{
     text-align: center;
 }
-.outer-2,.outer-3,.outer-4{
+.outer-2,.outer-3,.outer-4,.outer-5,.outer-6{
     margin-top:30px;
     
 }
@@ -189,4 +195,90 @@ body{
 }
 .cont-4-img{
     width:510px;
+}
+
+
+.cont-6-img-cont{
+   
+    padding:30px;
+    margin-left:100px;
+}
+.outer-5{
+    margin-top: 50px;
+}
+.cont-6{
+    margin-top: 30px;
+    margin-left:30px;
+}
+.heading{
+    text-align: center;
+}
+.cont-6{
+    display: flex;
+    position: relative;
+}
+.c-img{
+    width:70px;
+    border: 3px solid #F0C929;
+    border-radius: 50%;
+}
+.inners{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.inners .c-img{
+    margin-right:15px;
+}
+#c-img-1{
+    top:12px;
+
+}
+#c-img-2{
+    top:104px;
+    left: 490px;
+}
+#c-img-3{
+    top:204px;
+    left: 485px;
+}
+#c-img-4{
+    top:304px;
+    left: 440px;
+}
+.cont-7{
+    margin-top:60px;
+    text-align: center;
+}
+.close-img{
+    margin-top: 20px;
+    width:475px;
+}
+.f-btn{
+    margin-top: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 90px;
+    
+}
+footer ul{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+}
+footer ul li{
+    margin:20px 0px;
+}
+footer h3{
+    color:#F0C929;
+}
+.sign-off{
+    text-align: center;
+    color: #F0C929;
+    padding: 20px;
 }
