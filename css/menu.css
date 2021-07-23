@@ -1,0 +1,266 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    color:white;
+    
+}
+
+/* Navbar css starts*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.r-nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.r-nav li{
+    list-style:none;
+    margin:10px;
+}
+.r-nav a{
+    text-decoration: none;
+    padding:1rem;
+    display: block;
+}
+.toggle-button{
+    position: absolute;
+    top:2.3rem;
+    right:1rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+.toggle-button .bar{
+    height:3px;
+    width:100%;
+    border-radius: 10px;
+    background-color: black;
+}
+.brand{
+    padding: 20px;
+    padding-top: 9px;
+}
+
+body{
+    background-color:black;
+}
+/* Navbar css ends*/
+.intro{
+ 
+    display: flex;
+   justify-content: space-evenly;
+   
+}
+.hero-img img{
+    width: 400px;
+    animation:motion 2s alternate infinite;
+}
+@keyframes motion{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(-15px);}
+}
+
+.hero-img{
+    padding: 30px;
+}
+.content-1{
+    padding-top: 90px;
+    margin-top: 30px;
+}
+.cont{
+    padding: 30px;
+    margin: 30px;
+    
+
+}
+.cont-2{
+    display: flex;
+    justify-content: center;
+    
+}
+.cont-2-img{
+    animation:rotater 80s infinite linear;
+}
+@keyframes rotater {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+    
+}
+.cont h2{
+ text-align: center;
+}
+.cont-2{
+    margin-right:40px;
+    margin-left:40px;
+}
+.veg , .non-veg{
+    transform: skewX(20deg); 
+    width:300px;
+    height:70px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.cheesy,.thin-crust{
+    transform: skewX(-20deg); 
+    width:300px;
+    height:70px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.veg ,.thin-crust{
+    border:3px solid #F0C929;
+    padding-top:1px ;
+    margin-bottom: 5px;
+}
+.cheesy,.non-veg{
+    border: 3px solid #9D0505;
+    padding-top:1px ;
+}
+.inner-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+/* .veg h2,.thin-crust h2{
+   color:black;
+  
+} */
+
+.veg h2 , .non-veg h2{
+    transform: skewX(-20deg);
+  
+    
+    
+}
+
+.thin-crust h2, .cheesy h2{
+    transform: skewX(20deg);
+}
+.inner-cont h2{
+    margin-top: 20px;
+}
+.veg-pizzas{
+    margin-top: 30px;
+    padding: 30px;
+}
+.veg-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.cont-4{
+    width: 50%;
+}
+.cont-5{
+    text-align: center;
+}
+.cont-5-img{
+    width: 359px;
+}
+.card-img{
+    width:100px;
+}
+.veg-pizza-cont{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.card{
+    width:270px;
+    height:380px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+.img-cont{
+    text-align: center;
+    margin-top: 50px;
+}
+.details .title{
+    text-align: center;
+    margin-top: 20px;
+}
+.toppings{
+    width:30px;
+    text-align: center;
+}
+.tops{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.close{
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+}
+.closing-img{
+    width:475px;
+}
+.btn{
+    padding: 8px 25px;
+    border-radius: 20px;
+    border:1px solid white;
+    background-color: black;
+    cursor: pointer;
+    animation:btn 1.5s alternate infinite;
+    
+}
+.arrows{
+    margin-left: 10px;
+    margin-top: 5px;
+    animation:arrow 1.5s alternate infinite;
+}
+@keyframes arrow{
+    0%{color:white;}
+    50%{color:#F0C929;}
+    100%{color:white;}
+}
+@keyframes btn {
+    0%{border: 1px solid white;}
+    50%{border: 1px solid #F0C929;}
+    100%{border: 1px solid white;}
+}
+.f-btn{
+    margin-top: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 90px;
+    
+}
+footer ul{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+}
+footer ul li{
+    margin:20px 0px;
+}
+footer h3{
+    color:#F0C929;
+}
+.sign-off{
+    text-align: center;
+    color: #F0C929;
+    padding: 20px;
+    
+}

@@ -222,6 +222,9 @@ body{
     border: 3px solid #F0C929;
     border-radius: 50%;
 }
+.cont-5-img-cont,.cont-3-img-cont{
+    text-align: center;
+}
 .inners{
     display: flex;
     align-items: center;
@@ -281,4 +284,5 @@ footer h3{
     text-align: center;
     color: #F0C929;
     padding: 20px;
+    
 }
