@@ -90,6 +90,7 @@ body{
     border:1px solid white;
     background-color: black;
     cursor: pointer;
+    text-decoration: none;
     animation:btn 1.5s alternate infinite;
     
 }
@@ -293,6 +294,16 @@ footer h3{
     color: #F0C929;
     padding: 20px;
     
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity:0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
 }
 /* Media Queries */
 @media (max-width: 1024px){

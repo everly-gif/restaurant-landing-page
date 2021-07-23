@@ -43,7 +43,7 @@
     height:3px;
     width:100%;
     border-radius: 10px;
-    background-color: black;
+    background-color: white;
 }
 .brand{
     padding: 20px;
@@ -54,6 +54,7 @@ body{
     background-color:black;
 }
 /* Navbar css ends*/
+
 .intro{
  
     display: flex;
@@ -74,7 +75,9 @@ body{
 }
 .content-1{
     padding-top: 90px;
+    margin:20px;
     margin-top: 30px;
+    width: 50%;
 }
 .cont{
     padding: 30px;
@@ -129,7 +132,7 @@ body{
 }
 .inner-cont{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 50px;
 }
@@ -151,11 +154,11 @@ body{
 .inner-cont h2{
     margin-top: 20px;
 }
-.veg-pizzas{
+.pizza-bar{
     margin-top: 30px;
     padding: 30px;
 }
-.veg-content{
+.pizza-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,7 +178,7 @@ body{
 .card-img{
     width:100px;
 }
-.veg-pizza-cont{
+.pizza-cont{
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
@@ -220,6 +223,9 @@ body{
     animation:btn 1.5s alternate infinite;
     
 }
+.heading{
+    padding: 20px;
+}
 .arrows{
     margin-left: 10px;
     margin-top: 5px;
@@ -242,7 +248,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin: 30px;
+    margin: 10px;
     margin-top: 90px;
     
 }
@@ -263,4 +269,157 @@ footer h3{
     color: #F0C929;
     padding: 20px;
     
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity:0;
+    transition: all 1s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity:1;
+}
+/* Media queries */
+@media (max-width: 1024px){
+    .toggle-button{
+        display: flex;
+    }
+    .r-nav{
+        display: none;
+        width:100%;
+        padding:20px 0px;
+        z-index:100;
+        background-color: white;
+        
+       
+
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul{
+        width:100%;
+        flex-direction: column;
+    } 
+ 
+    .r-nav li a{
+        padding: .5rem 1rem;
+        color:black;
+    }
+    .inner-cont{
+        width:200px;
+        height:200px;
+    }
+   .r-nav.act{
+    display: flex;
+    }
+    
+
+    
+   
+}
+@media (max-width:1176px){
+    .inner-cont{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (max-width:945px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right:10px;
+        padding-left: 10px;
+        padding-top:10px;
+    }
+    .hero-img{
+        order:2;
+    }
+    .content-1{
+        width: 90%;
+        margin-top: 0px;
+    }
+    .cont-1{
+        margin-bottom: 20px;
+        
+    }
+}
+@media (max-width:1228px){
+    .pizza-cont{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        gap: 50px;
+        margin-top: 30px;
+    }
+}
+@media (max-width:972px){
+    .pizza-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 30px 20px;
+        
+    }
+    .cont-4{
+        width: 90%;
+        
+        
+    }
+    .pizza-bar{
+        padding:10px;
+    }
+    .cont-5{
+        margin-top:50px;
+        margin-bottom: 30px;
+    }
+    .cont-5-img{
+        padding: 30px;
+    }
+    .upper{
+        order:2;
+    }
+}
+@media (max-width: 869px){
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-row-gap:20px;
+    }
+
+}
+@media (max-width: 724px){
+    .pizza-cont{
+        grid-template-columns: repeat(1,auto);
+    }
+}
+@media (max-width: 565px){
+    .footer{
+       
+        grid-template-columns: repeat(1,auto);
+  
+    }
+}
+@media (max-width: 540px){
+    .closing-img{
+        width:375px;
+    }
+    
+}
+@media (max-width:472px){
+    .hero-img img{
+        width:300px;
+    }
+    .cont-5-img{
+        width:259px;
+    }
+}
+@media (max-width:436px){
+  .closing-img{
+      width:275px;
+  }
 }
