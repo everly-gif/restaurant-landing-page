@@ -6,6 +6,9 @@
     color:white;
     
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* Navbar css starts*/
 
@@ -225,6 +228,7 @@ body{
     background-color: black;
     cursor: pointer;
     animation:btn 1.5s alternate infinite;
+    text-decoration: none;
     
 }
 .heading{
