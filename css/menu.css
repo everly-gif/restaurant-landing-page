@@ -29,6 +29,10 @@
     padding:1rem;
     display: block;
 }
+.r-nav li a:hover{
+    color: #F0C929;
+    transition: all .3s ease;
+}
 .toggle-button{
     position: absolute;
     top:2.3rem;
@@ -47,7 +51,7 @@
 }
 .brand{
     padding: 20px;
-    padding-top: 9px;
+    padding-top: 12px;
 }
 
 body{
@@ -316,7 +320,9 @@ footer h3{
     display: flex;
     }
     
-
+    .brand{
+        padding-top:14px ;
+    }
     
    
 }
